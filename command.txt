@@ -1,0 +1,34 @@
+===============
+DOCKER COMMAND
+==============
+
+Versi docker.
+$ docker -v
+
+Daftar image.
+$ docker images
+
+Running container dari sebuah image.
+Jika image tidak ditemukan di local, akan download.
+$ docker run <image-name>
+$ docker run docker/whalesay
+
+=============
+LINUX COMMAND
+=============
+
+$ sudo apt update --> Check apakah ada update?
+$ sudo apt upgrade --> Upgrade
+
+$ mkdir <directory-name> --> Create directory / folder
+$ mkdir docker-express  
+
+$ touch <file-name> --> Create new file
+$ touch index.html
+
+$ ls --> Menampilkan list di suatu directory
+$ ls -a --> Menampilkan semua isi dari directory. Termasuk yang di hidden.
+$ ls -l --> Menampilkan dalam bentuk list tersusun ke bawah
+$ ls | grep <keyword> --> Menampilkan list yang mengandung keyword tertentu
+
+$ code <directory-name> --> Membuka directory menggunakan visual studio code
