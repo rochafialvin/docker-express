@@ -8,10 +8,22 @@ $ docker -v
 Daftar image.
 $ docker images
 
+Daftar container
+$ docker ps
+
+Stop container
+$ docker stop <name> / <container-id>
+$ docker stop lewandoski
+
 Running container dari sebuah image.
 Jika image tidak ditemukan di local, akan download.
 $ docker run <image-name>
 $ docker run docker/whalesay
+
+Build image
+$ docker build <directory-target>
+$ docker build . (folder saat ini berada)
+
 
 =============
 LINUX COMMAND
