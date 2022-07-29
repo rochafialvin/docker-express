@@ -1,12 +1,23 @@
-===============
+==============
 DOCKER COMMAND
 ==============
 
+---------
+# IMAGE #
+---------
 Versi docker.
 $ docker -v
 
 Daftar image.
 $ docker images
+
+Build image
+$ docker build <directory-target>
+$ docker build . (folder saat ini berada)
+
+-------------
+# CONTAINER #
+-------------
 
 Daftar container
 $ docker ps
@@ -15,14 +26,25 @@ Stop container
 $ docker stop <name> / <container-id>
 $ docker stop lewandoski
 
-Running container dari sebuah image.
+Create and running container dari sebuah image. (Membuat container baru)
 Jika image tidak ditemukan di local, akan download.
 $ docker run <image-name>
 $ docker run docker/whalesay
 
-Build image
-$ docker build <directory-target>
-$ docker build . (folder saat ini berada)
+Create and running container with name
+$ docker run --name <container-name>
+
+Running container dari container yang mati.
+$ docker start <container-name>
+$ docker start quirky_aryabhata
+
+Running container
+- --rm                  --> Auto delete after container stop
+- -p 2104:3000          --> Menghubungkan port 2104 host dengan port 3000 docker
+- --name container-api  --> Container akan memiliki sebuah nama container-api
+- api-note:cats         --> Image yang digunakan untuk create container
+
+$ docker run --rm -p 2104:3000 --name container-api api-note:cats
 
 
 =============

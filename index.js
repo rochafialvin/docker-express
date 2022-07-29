@@ -10,6 +10,10 @@ app.get("/", (req, res) => {
   res.send("Welcome home 😻");
 });
 
+app.get("/cats", (req, res) => {
+  res.send(["😻", "😻", "😻", "😻", "😻"]);
+});
+
 app.listen(port, (error) => {
   if (error) return console.log({ error });
   console.log(`API is running at ${port}`);

@@ -14,7 +14,7 @@ COPY package.json /app
 # Running yarn install --> Install semua dependencies yang tertulis di packgae.json
 RUN yarn install
 
-# Copy file / directory di project ke app
+# Copy seluruh file / directory di project ke app
 COPY . /app
 
 ##########################################################

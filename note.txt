@@ -1,0 +1,4 @@
+# CONTAINER #
+- Container memiliki sistem portnya sendiri. Secara default tidak bisa diakses dar luar container
+- Maka diperlukan untuk menghubungkan port host (laptop) dengan port docker
+- Kita akan menghubungi port host, lalu diteruskan ke port docker.
